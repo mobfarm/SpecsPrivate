@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint SFTSimpleFileTransferClient.podspec' to ensure this is a
+#  Be sure to run `pod spec lint MFLog.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,12 +15,12 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "SFTSimpleFileTransferClient"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of SFTSimpleFileTransferClient."
+  s.name         = "MFLog"
+  s.version      = "0.1.0"
+  s.summary      = "A short description of MFLog."
 
   s.description  = <<-DESC
-                   A longer description of SFTSimpleFileTransferClient in Markdown format.
+                   A longer description of MFLog in Markdown format.
 
                    * Think: Why did you write this? What is the focus? What does it do?
                    * CocoaPods will be using this to generate tags, and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "https://github.com/mobfarm/SFTSimpleFileTransferClient"
+  s.homepage     = "https://github.com/mobfarm/MFLog"
   # s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
 
 
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = 'MIT'
+  s.license      = 'BSD'
   # s.license      = { :type => 'MIT', :file => 'FILE_LICENSE' }
 
 
@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/mobfarm/SFTSimpleFileTransferClient.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/mobfarm/MFLog.git", :tag => "0.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -86,7 +86,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = '*.{h,m}'
+  s.source_files  = 'Classes', 'Classes/**/*.{h,m}'
   s.exclude_files = 'Classes/Exclude'
 
   # s.public_header_files = 'Classes/**/*.h'
@@ -125,9 +125,13 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  s.requires_arc = true
+  # s.requires_arc = true
 
   # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
-  s.dependency 'CocoaAsyncSocket', '~> 7.3.1'
-  s.dependency 'MFLog'
+  # s.dependency 'JSONKit', '~> 1.4'
+  s.dependency 'CocoaLumberjack', '~> 1.6.2'
+  s.dependency 'TestFlightSDK', '~> 2.0.0'
+  s.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.0.0'
+  s.dependency 'EventTracker', '~> 0.1.0'
+  s.dependency 'MFCommons', '~> 0.1.0'
 end
