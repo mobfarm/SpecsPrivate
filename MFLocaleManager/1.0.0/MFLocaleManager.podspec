@@ -113,7 +113,7 @@ Pod::Spec.new do |s|
   # s.framework  = 'SomeFramework'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
 
-  s.library   = 'MFLocaleManager'
+  # s.library   = 'MFLocaleManager'
   # s.libraries = 'iconv', 'xml2'
 
 
