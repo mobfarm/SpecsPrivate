@@ -112,10 +112,10 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = 'CommonCrypto'
+  # s.framework  = 'CommonCrypto'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
 
-  # s.library   = 'iconv'
+  s.library   = 'commonCrypto'
   # s.libraries = 'iconv', 'xml2'
 
 
@@ -129,5 +129,5 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
   # s.dependency 'JSONKit', '~> 1.4'
-
+  s.dependency 'MFLog', '~> 0.1.0'
 end
