@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "EXMU"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "iPad guide for museums"
 
   s.description  = <<-DESC
@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/mobfarm/EXMU.git", :tag => "1.0.2" }
+  s.source       = { :git => "https://github.com/mobfarm/EXMU.git", :tag => "1.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
