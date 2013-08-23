@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = 'MFPlayer', 'MFPlayer/**/*.{h,m}'
-  s.exclude_files = 'Classes/Exclude'
+  s.exclude_files = 'MFPlayer/MFPlayerDemo/**'
 
   # s.public_header_files = 'Classes/**/*.h'
 
