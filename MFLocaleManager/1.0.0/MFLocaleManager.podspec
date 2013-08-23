@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, svn and HTTP.
   #
 
-  s.source       = { :git => "http://github/mobfarm/MFLocaleManager.git", :tag => "1.0.0" }
+  s.source       = { :git => "http://github.com/mobfarm/MFLocaleManager.git", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
