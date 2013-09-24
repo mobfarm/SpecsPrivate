@@ -84,7 +84,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = 'Source', 'Source/**/*.{h,m}'
-
+  s.exclude_files = "Source/AppKit additions/*.{h,m}"
   # s.public_header_files = 'Classes/**/*.h'
 
 
