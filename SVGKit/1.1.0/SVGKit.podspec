@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/macteo/SVGKit/tree/1.1.0", :tag => "1.1.0" }
+  s.source       = { :git => "https://github.com/macteo/SVGKit.git", :tag => "1.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
