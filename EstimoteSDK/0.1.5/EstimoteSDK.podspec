@@ -18,9 +18,9 @@ Pod::Spec.new do |s|
   
   s.frameworks = 'CoreBluetooth', 'SystemConfiguration', 'CoreLocation'
   
-  s.library    = 'EstimoteSDK7'
+  s.library    = 'libEstimoteSDK7'
   s.xcconfig        =  { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/EstimoteSDK/EstimoteSDK' }
-  s.preserve_paths  = 'EstimoteSDK/EstimoteSDK7.a'
+  s.preserve_paths  = 'EstimoteSDK/libEstimoteSDK7.a'
   
   s.requires_arc = true
 end
